@@ -9,7 +9,6 @@ import '../model/news_article.dart';
 
 final newsRepositoryProvider = FutureProvider.autoDispose
     .family<List<NewsArticle>, String>((ref, searchTerm) async {
-  ref.invalidateSelf();
 
   Dio dio = await ref.read(newsDioProvider.future);
   Response response =

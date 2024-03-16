@@ -10,6 +10,17 @@ class NewsArticle {
   late final DateTime? publishedAt;
   late final String? content;
 
+  NewsArticle({
+    this.newsSource,
+    this.author,
+    this.title,
+    this.description,
+    this.url,
+    this.urlToImage,
+    this.publishedAt,
+    this.content,
+  });
+
   NewsArticle.fromJson({required Map<String, dynamic> json}) {
     if (json.containsKey("source")) {
       newsSource = NewsSource.fromJson(json: json["source"]);

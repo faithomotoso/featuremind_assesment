@@ -1,6 +1,5 @@
 // The API being used doesn't send over the entire news content but has a link for it
 
-import 'package:featuremind_assessment/core/model/news_article.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 

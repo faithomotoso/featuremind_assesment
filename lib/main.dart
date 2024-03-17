@@ -1,7 +1,6 @@
-import 'package:featuremind_assessment/core/model/news_article.dart';
 import 'package:featuremind_assessment/ui/pages/news_list.dart';
 import 'package:featuremind_assessment/core/business_logic/providers/keys_provider.dart';
-import 'package:featuremind_assessment/core/business_logic/providers/provider_observer.dart';
+import 'package:featuremind_assessment/utils/provider_observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -27,6 +26,7 @@ class MyApp extends ConsumerWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        appBarTheme: const AppBarTheme(centerTitle: true)
       ),
       scaffoldMessengerKey: ref.read(scaffoldMessengerKeyProvider),
       navigatorKey: ref.read(navigatorKeyProvider),

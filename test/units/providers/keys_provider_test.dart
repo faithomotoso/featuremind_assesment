@@ -11,8 +11,8 @@ void main() {
 
     final ProviderContainer container = createContainer();
 
-    final ApiKeys apiKeys = await container.read(keysProvider.future);
+    final ApiKeys? apiKeys = await container.read(keysProvider.future);
 
-    expect(apiKeys.newsApiKey, isNotNull);
+    expect(apiKeys?.newsApiKey, isNotNull);
   });
 }

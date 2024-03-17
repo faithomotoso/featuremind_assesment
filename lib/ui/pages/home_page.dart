@@ -1,6 +1,4 @@
 import 'dart:developer';
-
-import 'package:dio/dio.dart';
 import 'package:featuremind_assessment/core/repository/news_repository.dart';
 import 'package:featuremind_assessment/ui/pages/news_list.dart';
 import 'package:featuremind_assessment/ui/widgets/search_widget.dart';

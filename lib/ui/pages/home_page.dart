@@ -23,11 +23,6 @@ class _HomePageState extends ConsumerState<HomePage> {
   final ValueNotifier<bool> loadingNotifier = ValueNotifier(false);
 
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   void dispose() {
     searchController.dispose();
     loadingNotifier.dispose();
